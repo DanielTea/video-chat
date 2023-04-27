@@ -35,7 +35,7 @@ with gr.Blocks() as video_block:
 
             question = gr.Textbox(label="Question")
             btn_ask = gr.Button("Ask question")
-            response = gr.Textbox(label="Response")
+            response = gr.Textbox(label="Response based on the video")
             btn_ask.click(fn=ask_question, inputs=[question, index], outputs=[response, log])
 
 if __name__ == "__main__":
